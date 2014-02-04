@@ -1,13 +1,17 @@
 LandingpApp::Application.routes.draw do
 
+  resources :associations
+
+  resources :citizens
+
+  resources :voluntaries
+
 root to: "vitrine#index"
 
 match "/vitrine/concept", to: "vitrine#concept", via: "get"
 match "/vitrine/superheros", to: "vitrine#superheros", via: "get"
 match "/vitrine/montreuilcity", to: "vitrine#montreuilcity", via: "get"
 match "/vitrine/contact", to: "vitrine#contact", via: "get"
-match "", to: "", via: "get"
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -12,3 +12,7 @@
  *= require_self
  *= require_tree .
  */
+
+.navbar-modif{
+	padding-top: 20px;
+}

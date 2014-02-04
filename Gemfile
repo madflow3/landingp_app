@@ -53,9 +53,8 @@ gem 'sidekiq'
 # Pour la gestion des envois de mails
 gem "madmimi"
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+group :development do
+  gem 'pry'
 end
 
 # Use ActiveModel has_secure_password
