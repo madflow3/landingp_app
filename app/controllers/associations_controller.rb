@@ -6,7 +6,7 @@ end
 
 def create
 	@association = Association.new association_params
-	@association save if @association.valid? 
+	@association.save if @association.valid?
 end
 
 private
