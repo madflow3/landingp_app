@@ -1,9 +1,12 @@
 LandingpApp::Application.routes.draw do
 
+  get "contact_form/new"
+  get "contact_form/create"
+  
+  resources :contact_forms
+  resources :entrepreneurs
   resources :associations
-
   resources :citizens
-
   resources :voluntaries
 
 root to: "vitrine#index"

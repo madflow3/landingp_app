@@ -6,6 +6,8 @@ body {
   padding-bottom: 40px;
   color: #5a5a5a;
 }
+  /*background-image: url(NF2.jpg); background-repeat: no-repeat;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -67,23 +69,31 @@ body {
   border-radius: 10px
 }
 
+
+/* VITRINE CONCEPT
+-------------------------------------------------- */
+.concept {
+ margin-right: -10px; color: black; 
+}
+
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 #col-lg-4{
   background-color: #e3e3e3;
-  border: 2px solid d9d9d9;
+  border: 2px solid #d9d9d9;
   padding-right: 5px;
 }
 
 #col-lg-5{
   background-color: #e3e3e3;
-  border: 2px solid d9d9d9
+  border: 2px solid #d9d9d9;
   
 }
 
 #col-lg-6{
   background-color: #e3e3e3;
-  border: 2px solid d9d9d9
+  border: 2px solid #d9d9d9;
 }
 
 /* Pad the edges of the mobile views a bit */
