@@ -28,6 +28,9 @@ gem 'jbuilder', '~> 1.2'
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 
+# Gére touit ce qui est relatif au chargement d'images
+#gem paperclip
+
 # Pour les icones
 gem "font-awesome-rails"
 
