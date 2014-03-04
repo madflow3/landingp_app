@@ -6,13 +6,13 @@ end
 
 def create
 	@association = Association.new association_params
+	binding.pry
 	@association.save if @association.valid?
 end
 
 private
 
 def association_params
-	params.require(:association).permit(:name, :presentation, :adress, :needs, :email)
+	params.require(:association).permit(:last_name, :description, :address, :email, :besoins, :phone)
 end
-
 end
