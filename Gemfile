@@ -28,11 +28,11 @@ gem 'jbuilder', '~> 1.2'
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 
-# Gére touit ce qui est relatif au chargement d'images
-#gem paperclip
-
 # Pour les icones
 gem "font-awesome-rails"
+
+# Gére tout ce qui est relatif au chargement d'images
+#gem paperclip
 
 # Pour les formulaires
 gem 'simple_form'
@@ -43,11 +43,10 @@ gem 'devise'
 # Pour recharger le server
 gem 'shotgun'
 
-# Pour la gestion des activités en différe (mail automatique de confrmation suite à une inscription) 
-gem 'sidekiq'
-
 # Pour la gestion des envois de mails
+gem 'sidekiq'# Pour la gestion des activités en différe (mail automatique de confirmation suite à une inscription)
 gem "madmimi"
+gem "gibbon" # Pour la gestion de l'API mailchimp
 
 gem 'libv8'
 

@@ -3,11 +3,13 @@ class AssociationsController < ApplicationController
 def new
 	@association = Association.new
 end
-
+ 
 def create
 	@association = Association.new association_params
-	binding.pry
 	@association.save if @association.valid?
+	gb = ("55c2899ec9189665ff2b7cce4692dd69-us3")	
+	list_id = b2845c8399
+
 end
 
 private

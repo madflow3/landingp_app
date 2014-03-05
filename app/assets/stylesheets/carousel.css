@@ -60,7 +60,8 @@ body {
 .carousel-text {
   /*background-color: rgba(240, 200, 200, 0.5);*/
   background-color: rgba(0, 0, 0, 0.8); 
-  border-radius: 10px
+  padding: 1px;
+  border-radius: 10px;
 }
 
 .container-marketing {
