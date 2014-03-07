@@ -5,6 +5,7 @@ class CreateAssociations < ActiveRecord::Migration
       t.string :email
       t.string :address
       t.string :phone
+      t.string :time
       t.text :description
       t.text :besoins
       t.timestamps

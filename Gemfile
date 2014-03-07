@@ -46,7 +46,6 @@ gem 'shotgun'
 # Pour la gestion des envois de mails
 gem 'sidekiq'# Pour la gestion des activités en différe (mail automatique de confirmation suite à une inscription)
 gem "madmimi"
-gem "gibbon" # Pour la gestion de l'API mailchimp
 
 gem 'libv8'
 
@@ -62,6 +61,7 @@ group :development do
   gem 'sqlite3', '1.3.8'
   gem "rspec"
   gem "capybara"
+  gem "gibbon" # Pour la gestion de l'API mailchimp
 end
 
 # Use ActiveModel has_secure_password

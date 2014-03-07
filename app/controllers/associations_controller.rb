@@ -7,20 +7,19 @@ end
 def create
 	@association = Association.new association_params
 	@association.save if @association.valid?
-	gb = Gibbon::API.new("55c2899ec9189665ff2b7cce4692dd69-us3")	
-	list_id = "b2845c8399"
-
-begin
+	gb = Gibbon::API.new("62f2fb210e5b52601f3646a44c3923c2-us3")	
+	list_id = "be69e57317"
+	begin
 	gb.lists.subscribe({
-	:id => list_id,
-	:email => {:email => params[:email]},
-	:double_optin => true
-	})
-	notice = "C'est pratiquement fini;) Merci de confirmer votre inscription"
-rescue Gibbon::MailChimpError => e 
-	notice = e.message
-end
-	#redirect_to root_url, notice: notice
+		id: list_id, 
+		email: {email: params[:association][:email]},
+		double_optin: true
+	 })
+	notice = "Merci de confirmer votre inscription :)"
+	rescue Gibbon::MailChimpError => e 
+		notice = e.message
+	end
+	render 'voluntaries/create'
 end
 
 private

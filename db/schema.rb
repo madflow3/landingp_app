@@ -11,20 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140227164129) do
+ActiveRecord::Schema.define(version: 20140307152628) do
 
   create_table "associations", force: true do |t|
     t.string   "last_name"
     t.string   "email"
     t.string   "address"
     t.string   "phone"
+    t.string   "time"
     t.text     "description"
     t.text     "besoins"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "citizens", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -49,6 +45,7 @@ ActiveRecord::Schema.define(version: 20140227164129) do
     t.boolean  "get_missions"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "age"
   end
 
 end

@@ -1,3 +1,3 @@
 class Voluntary < ActiveRecord::Base
-	validates :email, presence: true
+	validates :email, :age, presence: true
 end
