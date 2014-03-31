@@ -6,5 +6,6 @@ class Association < ActiveRecord::Base
 		validates :phone, presence: true
 		validates :description, presence: true
 		validates :besoins, presence: true
+    has_one :localisation, as: :localisable
 end
 		
