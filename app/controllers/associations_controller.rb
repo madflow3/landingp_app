@@ -1,5 +1,9 @@
 class AssociationsController < ApplicationController
 
+def map
+	
+end
+
 def new
 	@association = Association.new
 end
