@@ -1,0 +1,7 @@
+# Be sure to restart your server when you modify this file.
+
+<<<<<<< HEAD
+LandingpApp::Application.config.session_store :cookie_store, key: '_landingp_app_session'
+=======
+LandpApp::Application.config.session_store :cookie_store, key: '_landp_app_session'
+>>>>>>> 969fb8e987c18ee5a1a0f2732bee8445d0d7fe02
