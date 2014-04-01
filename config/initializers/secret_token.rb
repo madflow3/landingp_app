@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-LandingpApp::Application.config.secret_key_base = '8fe85cf7d0657a0791e2d90950ad908719e320b9de59d2661dfeb012dd750263269db7cc4ffd6aadda4824fdfdbe57ab0a825d03307b60c21a627d836aea0c76'
+LandpApp::Application.config.secret_key_base = '8fe85cf7d0657a0791e2d90950ad908719e320b9de59d2661dfeb012dd750263269db7cc4ffd6aadda4824fdfdbe57ab0a825d03307b60c21a627d836aea0c76'
