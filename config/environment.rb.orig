@@ -2,4 +2,8 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the Rails application.
+<<<<<<< HEAD
+LandingpApp::Application.initialize!
+=======
 LandpApp::Application.initialize!
+>>>>>>> 969fb8e987c18ee5a1a0f2732bee8445d0d7fe02
