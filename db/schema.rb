@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140307152628) do
+ActiveRecord::Schema.define(version: 20140331124158) do
 
   create_table "associations", force: true do |t|
     t.string   "last_name"
@@ -32,6 +32,15 @@ ActiveRecord::Schema.define(version: 20140307152628) do
     t.string   "phone"
     t.string   "address"
     t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "localisations", force: true do |t|
+    t.float    "longitude"
+    t.float    "latitude"
+    t.integer  "localisable_id"
+    t.string   "localisable_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

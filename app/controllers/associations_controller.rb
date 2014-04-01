@@ -1,5 +1,6 @@
 class AssociationsController < ApplicationController
 
+
 def new
 	@association = Association.new
 end

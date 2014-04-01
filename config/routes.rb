@@ -1,8 +1,9 @@
 LandingpApp::Application.routes.draw do
 
+  get "map/display"
   get "contact_form/new"
   get "contact_form/create"
-  
+  get "associations/map"  
   resources :contact_forms
   resources :entrepreneurs
   resources :associations
