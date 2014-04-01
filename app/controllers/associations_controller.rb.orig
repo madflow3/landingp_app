@@ -1,10 +1,13 @@
 class AssociationsController < ApplicationController
 
+<<<<<<< HEAD
+=======
 def map
 	call_loc = Localisation.all
 	@locs = call_loc.map{ |l| [l.latitude,l.longitude] }
 
 end
+>>>>>>> 747ff2713137d4eea2bd54bfbb593c54127a49c9
 
 def new
 	@association = Association.new

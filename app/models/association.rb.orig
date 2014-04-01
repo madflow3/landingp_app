@@ -9,6 +9,7 @@ class Association < ActiveRecord::Base
 		validates :phone, presence: true
 		validates :description, presence: true
 		validates :besoins, presence: true
+<<<<<<< HEAD
 
     # Association.create_with_address(params)
     def self.create_with_address(params)
@@ -23,5 +24,8 @@ class Association < ActiveRecord::Base
         localisation.position
       end
     end
+=======
+    has_one :localisation, as: :localisable
+>>>>>>> 747ff2713137d4eea2bd54bfbb593c54127a49c9
 end
 		

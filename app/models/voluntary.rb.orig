@@ -1,5 +1,5 @@
 class Voluntary < ActiveRecord::Base
-
+<<<<<<< HEAD
   has_many :localisations, as: :localisable
 
   validates :email, :age, presence: true
@@ -10,4 +10,8 @@ class Voluntary < ActiveRecord::Base
     end
   end
 
+=======
+	validates :email, :age, presence: true
+  has_many :localisations, as: :localisable
+>>>>>>> 747ff2713137d4eea2bd54bfbb593c54127a49c9
 end

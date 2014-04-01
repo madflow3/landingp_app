@@ -1,0 +1,11 @@
+class Localisation < ActiveRecord::Base
+  belongs_to :localisable, :polymorphic => true
+<<<<<<< HEAD
+
+  def position
+    [self.latitude, self.longitude]      
+  end
+
+=======
+>>>>>>> 747ff2713137d4eea2bd54bfbb593c54127a49c9
+end

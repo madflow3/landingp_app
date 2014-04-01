@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en"> 
   <head>
     <meta charset="utf-8">
@@ -68,3 +69,18 @@
 
 </body>
 </html>
+=======
+<html>
+<head>
+  <title>LandpApp</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
+>>>>>>> 969fb8e987c18ee5a1a0f2732bee8445d0d7fe02

@@ -1,6 +1,6 @@
+<<<<<<< HEAD
 LandingpApp::Application.routes.draw do
 
-  get "map/display"
   get "contact_form/new"
   get "contact_form/create"
   get "associations/map"  
@@ -16,6 +16,9 @@ match "/vitrine/concept", to: "vitrine#concept", via: "get"
 match "/vitrine/superheros", to: "vitrine#superheros", via: "get"
 match "/vitrine/montreuilcity", to: "vitrine#montreuilcity", via: "get"
 match "/vitrine/contact", to: "vitrine#contact", via: "get"
+=======
+LandpApp::Application.routes.draw do
+>>>>>>> 969fb8e987c18ee5a1a0f2732bee8445d0d7fe02
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
