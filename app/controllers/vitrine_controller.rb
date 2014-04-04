@@ -1,6 +1,5 @@
 class VitrineController < ApplicationController
 	def index
-		render layout: false
 	end
 	
 	def concept

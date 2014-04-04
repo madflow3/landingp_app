@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +30,7 @@
 
  <!-- Wrap the rest of the page in another container to center all the content. -->
  <header>
-  <div class="navbar-modif">
+  <div class="navbar-wrapper">
     <div class="container">
       <div class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="container">
@@ -41,7 +41,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Accueil</a>
+            <a class="navbar-brand" href="/">changetaville</a>
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -51,10 +51,10 @@
               <li><a href="/vitrine/contact">Contact</a></li>
               </ul>
             <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Creation de compte</a></li>
               <li><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
               <li><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
               <li><a href="#"><i class="fa fa-pinterest fa-lg"></i></a></li>
-              <li><a href="#"></a></li>
             </ul>
           </div>
         </div>
@@ -63,7 +63,17 @@
   </div>
   </header>
 
-<%= yield %>
+  <%= yield %>
 
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+    <!-- FOOTER -->
+    <footer>
+      <p class="text-center"><a href="#">Back to top</a></p>
+      <!--<p>&copy; 2014 ECMF. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>-->
+    </footer>
+  </div><!-- /.container -->
 </body>
 </html>
