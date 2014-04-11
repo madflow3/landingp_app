@@ -6,5 +6,12 @@ class Association < ActiveRecord::Base
 		validates :phone, presence: true
 		validates :description, presence: true
 		validates :besoins, presence: true
+
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
+	
+
 end
 		
