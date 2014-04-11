@@ -1,19 +1,20 @@
 LandingpApp::Application.routes.draw do
 
+  devise_for :users
   devise_for :voluntaries
   get "contact_form/new"
-  get "contact_form/create"
+  get "contact_form/create"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
   
   resources :contact_forms
   resources :associations  
   resources :voluntaries
 
 root to: "vitrine#index"
-
 match "/vitrine/concept", to: "vitrine#concept", via: "get"
 match "/vitrine/superheros", to: "vitrine#superheros", via: "get"
 match "/vitrine/montreuilcity", to: "vitrine#montreuilcity", via: "get"
 match "/vitrine/contact", to: "vitrine#contact", via: "get"
+match "/vitrine/", to: "vitrine#creationdecompte", via: "get"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
